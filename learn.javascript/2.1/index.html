@@ -6,8 +6,17 @@
     <title>Hello World</title>
 </head>
 <body>
-    <script>
+    <!-- В старых стандартах нужно было указывать атрибут type -->
+    <!-- Атрибут language так же является устаревшим и не используется, из-за того что по дефолту
+     его значение = javascript -->
+    <script
+        type="text/javascript"
+        language="javascript">
         console.log("Hello!")
+    </script>
+
+    <script src="script.js">
+        // !!! Если атрибут src установлен, содержимое тега script будет игнорироваться.
     </script>
 </body>
 </html>
